@@ -1,0 +1,45 @@
+ 
+<mat-dialog-content class="mat-typography">
+  <div class="container-fluid">
+    
+<form [formGroup]="Form">
+      <div class="card text-center" >
+          <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <label class="secondary-text margin-top align">Name</label> 
+                <input type="text" id="Name" name="Name"  formControlName="name" placeholder="Ex ramadan salah " class="form-control  " required>
+    
+             
+
+
+
+            <label class="secondary-text margin-top align">Email</label> 
+            <input type="text" id="email" name="email"  formControlName="email" placeholder="Ex mahmoud@gmail.com " class="form-control  " >
+       
+             
+     
+
+                   <label class="secondary-text margin-top align">date of birth</label> 
+                   <input type="date" id="dob" name="dob"  formControlName="dob"   class="form-control  ">
+             
+             
+                          <label class="secondary-text margin-top align">Country</label> 
+                          <input type="text" id="country" name="country"  formControlName="country" placeholder="Ex Egypt " class="form-control " >
+                      
+                      
+          </div>
+
+
+        </div>
+
+      </form>
+      </div>
+      
+   
+    
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close class="btn btn-danger">Cancel</button>
+    <button mat-button (click)="SubmitForm()" cdkFocusInitial class="btn btn-success">Save</button>
+  </mat-dialog-actions>

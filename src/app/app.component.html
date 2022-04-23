@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-primary btnadd" (click)="openDialog()">+</button>
+<br>
+<br>
+<br>
+<br>
+ 
+<div class="container">
+    <div class="row">
+    
+      <ng-container *ngFor="let item of PersonArr ,let HeaderIndex = index">
+        <div class="col-md-6 col-lg-4">
+          <div class="card text-center" >
+              <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" >{{item.name}}  <span style="color:rgb(64, 207, 218)" (click)="Edit(item,HeaderIndex)"> ....Edit</span></h5> 
+                <p class="card-text">{{item.email}}</p>
+                <p class="card-text">{{item.country}}</p>
+                <p class="card-text"> {{item.dob|age}} years</p>        
+              </div>
+            </div>
+          </div>
+      </ng-container>
+      
+    
+        </div>
+    
+    </div>

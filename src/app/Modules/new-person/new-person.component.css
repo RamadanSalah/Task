@@ -1,0 +1,12 @@
+.col-9 , .col-3 {
+    margin: 10px 0;
+}
+
+.example-section p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-left: 10px ;
+}
